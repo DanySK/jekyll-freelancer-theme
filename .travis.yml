@@ -1,5 +1,7 @@
 # Do not double-build branches and PRs from this repo
-if: repo != head_repolanguage: ruby
+if: repo != head_repo
+
+language: ruby
 
 script:
   - gem install jekyll bundler
