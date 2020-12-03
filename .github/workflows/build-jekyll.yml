@@ -13,11 +13,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Install Bundler
-        runs: gem install bundler
+        run: gem install bundler
       - name: Run bundle install
-        runs: bundle install
+        run: bundle install
       - name: Build Jekyll site
-        runs: bundle exec jekyll build
+        run: bundle exec jekyll build
   Automerge:
     needs: Build-Jekyll
     runs-on: ubuntu-latest
